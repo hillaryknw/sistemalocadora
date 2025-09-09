@@ -21,7 +21,6 @@ class Item:
         if not self.__status:
             self.__status = True
 
-
 # -----------------------------------------------------------
 
 class Film(Item):
@@ -30,11 +29,47 @@ class Film(Item):
         self.__genre = genre
         self.__duration = duration
 
+    def getName(self):
+        return self.__title
+    
+    def getGenre(self):
+        return self.__genre
+
+    def getDuration(self):
+        return self.__duration
+
+    def setName(self, title):
+            self.__title = title
+
+    def setGenre(self, genre):
+            self.__genre = genre 
+        
+    def setDuration(self, duration):
+            self.__duration = duration
+            
 class Game(Item):
     def __init__(self, code, title, platform, age_range):
         super().__init__(code, title)
         self.__platform = platform
         self.__age_range = age_range
+
+    def getName(self):
+        return self.__title
+    
+    def getPlatform(self):
+        return self.__platform
+
+    def getAgeRange(self):
+        return self.__age_range
+
+    def setName(self, title):
+            self.__title = title
+
+    def set(self, platform):
+            self.__platform = platform 
+        
+    def setDuration(self, age_range):
+            self.__age_range = age_range
 
 # -----------------------------------------------------------
 
