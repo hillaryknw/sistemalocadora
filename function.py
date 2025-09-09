@@ -11,6 +11,8 @@ def emprestar():
         print('---ALUGAR---')
         break
         
+
+
 def main_menu():
     store_options = ["Alugar filme", "Alugar jogo", "Devolver filme", "Devolver jogo", "Sair"]
     while True:
